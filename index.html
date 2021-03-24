@@ -6,31 +6,40 @@
 .press {
     display: block;  /* Remove bullet points; allow greater control of positioning */
     padding: 1px;      /* Override defaults for lists */
-    margin: 1px;       /* Override defaults for lists */
-    width: 100%;
+    margin: 1px; 
+    height: 200%;      /* Override defaults for lists */
    
     
     /* Get the row full width */
 }
 
 .press li {
-    display: block; /* Get all images to show in a row */
-    width: 100%;            /* Show 4 logos per row */
+    display: block; /* Get all images to show in a row */            /* Show 4 logos per row */
     text-align: center;
     border: gray 2px solid;
     margin: 1px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     background-color: #f2f2f2;
+    width: 100%;
+    height: 20%;
    
     /* Centre align the images */
 }
 
-@media (max-width: 960px) and (min-width: 501px) {
-    .press li { width: 100%;} /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
+@media only screen and (max-width: 800px) {
+  .press li {
+    font-size: 40px;
+  }
+  .press {
+    display: block;  /* Remove bullet points; allow greater control of positioning */
+    padding: 2px;      /* Override defaults for lists */
+    margin: 4px; 
+    height: 200%;      /* Override defaults for lists */
+   
+    
+    /* Get the row full width */
 }
-
-@media (max-width: 500px) {
-    .press li { width: 100%;} /* On small screens, show one logo per row */
+  
 }
 a{
 color:green;
@@ -40,8 +49,8 @@ a:hover {
   color:black;
 }
 img{
-    height: 15%;
-    width: 15%;
+    height: 25%;
+    width: 25%;
 }
 </style>
 <img src="emag.jpg" alt="emag">
